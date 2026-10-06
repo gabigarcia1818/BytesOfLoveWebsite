@@ -85,6 +85,10 @@
 #downloadCol{
     columns: 3;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 
     margin: 10px;
 }
@@ -100,6 +104,9 @@
     justify-content: center;
     flex-direction: column;
     height: 40vh;
+    flex: 1 1 0;
+    max-width: 300px;
+    min-height: 30px;
 
     align-items: center;
 }
@@ -112,6 +119,7 @@
     
     font-size: calc(4vw + 1vh);
     padding-bottom: 20px;
+    align-items: center;
     
 }
 
@@ -151,4 +159,31 @@
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
+}
+
+@media (max-width: 800px) {
+    #downloadCol {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto 20px auto;
+        padding: 20px 30px;
+    }
+}
+
+#macDownload, #linuxDownload, #windowsDownload {
+  text-align: center;
+}
+
+#macDownload .logo, #linuxDownload .logo, #windowsDownload  .logo {
+  display: block;
+  margin: 0 auto;
+}
+
+#downloadButton a {
+    font-size: 30px
 }

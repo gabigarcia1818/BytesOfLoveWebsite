@@ -26,6 +26,15 @@
   align-items: center;
   gap: 10px; 
   margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.logo-container .logo {
+  height: 60px;
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .header-option-text {
@@ -55,3 +64,5 @@
 
 /* Ideas: */
 /*   - A feel like the navbar still looks kind of slapped on there. Maybe adding the ufosc and bytes of love logo in the corners would help */
+
+
